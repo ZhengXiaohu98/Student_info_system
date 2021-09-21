@@ -4,14 +4,15 @@ A GUI application allows different roles(student, instructors, administrators) t
 ### Tables and database
 The application did not use MYSQL since it does not have a huge amount of data, instead this application was built based on SQLite. And all the data are maintained in a local file system.
 The application will contain 5 tables:
+
 Account table: (Username varchar(40) primary key, Passward varchar(20), Role varchar(20))
-  - <img src="https://github.com/ZhengXiaohu98/Student_info_system/blob/master/gifDemo_account.gif" width=500><br>
+  - <img src="https://github.com/ZhengXiaohu98/Student_info_system/blob/master/gifDemo_account.gif" width=750><br>
 Student table: (ID INTEGER primary key, Name varchar(50), Age INTEGER , Gender varchar(1), Department varchar(40) REFERENCES department(deptName)
-  - <img src="https://github.com/ZhengXiaohu98/Student_info_system/blob/master/gifDemo_student.gif" width=500><br>
+  - <img src="https://github.com/ZhengXiaohu98/Student_info_system/blob/master/gifDemo_student.gif" width=750><br>
 Instructor table:(IID INTEGER primary key, Name varchar(50), Rank varchar(20), Department varchar(40) REFERENCES department(deptName)
-  - <img src="https://github.com/ZhengXiaohu98/Student_info_system/blob/master/gifDemo_instructor.gif" width=500><br>
+  - <img src="https://github.com/ZhengXiaohu98/Student_info_system/blob/master/gifDemo_instructor.gif" width=750><br>
 Course table: (CID varchar(10) primary key, courseName varchar(100), Semester varchar(10), IID INTEGER, Instructor varchar(50))
-  - <img src="https://github.com/ZhengXiaohu98/Student_info_system/blob/master/gifDemo_course.gif" width=500><br>
+  - <img src="https://github.com/ZhengXiaohu98/Student_info_system/blob/master/gifDemo_course.gif" width=750><br>
 Department table: (deptName varchar(40) primary key, phoneNum varchar(13), officeNumber varchar(10)) same features like other tables
 
 ### User Stories
